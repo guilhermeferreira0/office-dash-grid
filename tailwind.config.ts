@@ -22,6 +22,8 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "hsl(var(--primary-light))",
+          dark: "hsl(var(--primary-dark))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -46,6 +48,22 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        menu: {
+          DEFAULT: "hsl(var(--menu-background))",
+          foreground: "hsl(var(--menu-foreground))",
+          hover: "hsl(var(--menu-hover))",
+        },
+        ribbon: {
+          DEFAULT: "hsl(var(--ribbon-background))",
+          border: "hsl(var(--ribbon-border))",
+        },
+        grid: {
+          header: "hsl(var(--grid-header))",
+          "header-foreground": "hsl(var(--grid-header-foreground))",
+          "row-even": "hsl(var(--grid-row-even))",
+          "row-odd": "hsl(var(--grid-row-odd))",
+          border: "hsl(var(--grid-border))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

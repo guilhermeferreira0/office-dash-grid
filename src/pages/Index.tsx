@@ -1,12 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { TopMenu } from "@/components/TopMenu";
+import { Ribbon } from "@/components/Ribbon";
+import { DataGrid } from "@/components/DataGrid";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen w-full bg-background flex flex-col">
+      <TopMenu />
+      <Ribbon />
+      
+      {/* Main content area with proper spacing for fixed headers */}
+      <main className="flex-1 flex flex-col mt-32 overflow-hidden">
+        <div className="px-4 py-2 border-b border-border">
+          <h1 className="text-lg font-semibold text-foreground">
+            SGI RECEPTIVO - Outubro 2024
+          </h1>
+        </div>
+        <DataGrid />
+      </main>
     </div>
   );
 };
