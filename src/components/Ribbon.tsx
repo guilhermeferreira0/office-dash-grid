@@ -62,8 +62,12 @@ const columns = [
   { id: "abs", label: "ABS %" },
 ];
 
-export const Ribbon = () => {
-  const [isExpanded, setIsExpanded] = useState(true);
+interface RibbonProps {
+  isExpanded: boolean;
+  setIsExpanded: (expanded: boolean) => void;
+}
+
+export const Ribbon = ({ isExpanded, setIsExpanded }: RibbonProps) => {
   const [selectedColumns, setSelectedColumns] = useState<string[]>(
     columns.flatMap((col) => [col.id, ...(col.children?.map((c) => c.id) || [])])
   );
