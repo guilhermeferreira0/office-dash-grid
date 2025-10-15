@@ -14,7 +14,7 @@ export const BottomBar = () => {
 
   return (
     <>
-      <div className="fixed bottom-0 left-0 right-0 h-10 bg-background/95 backdrop-blur-sm border-t-2 border-primary/20 shadow-lg z-20 flex items-center justify-center gap-6">
+      <div className="fixed bottom-0 left-0 right-0 h-10 bg-background/95 backdrop-blur-sm border-t-2 border-primary/20 shadow-lg z-20 flex items-center justify-start gap-6 pl-6">
         <Button
           variant="ghost"
           size="sm"
