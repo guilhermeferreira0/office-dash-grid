@@ -1,3 +1,6 @@
+import { ChevronRight } from "lucide-react";
+import { useState } from "react";
+
 const data = [
   {
     operacao: "TIM Fiber SAC",
@@ -130,12 +133,25 @@ const data = [
 ];
 
 export const DataGrid = () => {
+  const [expandedRows, setExpandedRows] = useState<number[]>([]);
+
+  const toggleRow = (index: number) => {
+    setExpandedRows(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    );
+  };
+
   return (
     <div className="flex-1 overflow-hidden bg-background">
       <div className="h-full overflow-auto">
         <table className="w-full border-collapse text-[9px] font-calibri">
           <thead className="sticky top-0 z-10">
             <tr className="bg-grid-header text-grid-header-foreground">
+              <th className="px-2 py-2 text-center font-semibold border-r border-grid-border w-8">
+                
+              </th>
               <th className="px-2 py-2 text-left font-semibold border-r border-grid-border whitespace-nowrap">
                 Operação
               </th>
@@ -177,6 +193,7 @@ export const DataGrid = () => {
               </th>
             </tr>
             <tr className="bg-grid-header text-grid-header-foreground">
+              <th className="px-2 py-1 border-r border-grid-border"></th>
               <th className="px-2 py-1 border-r border-grid-border"></th>
               <th className="px-2 py-1 border-r border-grid-border"></th>
               <th className="px-2 py-1 text-center font-medium border-r border-grid-border whitespace-nowrap">
@@ -223,6 +240,19 @@ export const DataGrid = () => {
                   index % 2 === 0 ? "bg-grid-row-even" : "bg-grid-row-odd"
                 }
               >
+                <td className="px-2 py-1.5 border-r border-grid-border text-center">
+                  <button
+                    onClick={() => toggleRow(index)}
+                    className="inline-flex items-center justify-center hover:bg-accent rounded p-0.5 transition-colors"
+                    title="Ver detalhes"
+                  >
+                    <ChevronRight 
+                      className={`h-4 w-4 transition-transform ${
+                        expandedRows.includes(index) ? 'rotate-90' : ''
+                      }`}
+                    />
+                  </button>
+                </td>
                 <td className="px-2 py-1.5 border-r border-grid-border whitespace-nowrap">
                   {row.operacao}
                 </td>
