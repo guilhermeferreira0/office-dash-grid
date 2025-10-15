@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, FileSpreadsheet } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -95,15 +95,26 @@ export const Ribbon = ({ isExpanded, setIsExpanded }: RibbonProps) => {
       <div className="fixed top-8 left-0 right-0 z-40 bg-ribbon border-b border-ribbon-border">
         <div className="px-4 py-1 flex items-center justify-between">
           <span className="text-xs text-muted-foreground">Ribbon oculta</span>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setIsExpanded(true)}
-            className="h-6 px-2 text-xs"
-          >
-            <ChevronDown className="h-3 w-3 mr-1" />
-            Mostrar Ribbon
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              className="h-8 px-3 text-xs bg-white hover:bg-gray-50"
+              onClick={() => console.log('Exportar para Excel')}
+            >
+              <FileSpreadsheet className="h-4 w-4 mr-2 text-black" />
+              Exportar Excel
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsExpanded(true)}
+              className="h-6 px-2 text-xs"
+            >
+              <ChevronDown className="h-3 w-3 mr-1" />
+              Mostrar Ribbon
+            </Button>
+          </div>
         </div>
       </div>
     );
@@ -212,15 +223,26 @@ export const Ribbon = ({ isExpanded, setIsExpanded }: RibbonProps) => {
             </div>
           </div>
 
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setIsExpanded(false)}
-            className="h-6 px-2 text-xs"
-          >
-            <ChevronUp className="h-3 w-3 mr-1" />
-            Ocultar
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              className="h-8 px-3 text-xs bg-white hover:bg-gray-50"
+              onClick={() => console.log('Exportar para Excel')}
+            >
+              <FileSpreadsheet className="h-4 w-4 mr-2 text-black" />
+              Exportar Excel
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsExpanded(false)}
+              className="h-6 px-2 text-xs"
+            >
+              <ChevronUp className="h-3 w-3 mr-1" />
+              Ocultar
+            </Button>
+          </div>
         </div>
       </div>
     </div>
