@@ -17,8 +17,8 @@ export const KPICard = ({ title, value, subtitle, icon: Icon, trend = "neutral" 
   };
 
   return (
-    <Card className="hover:shadow-md transition-shadow cursor-pointer h-[90px]">
-      <CardContent className="p-4 flex items-center justify-between h-full">
+    <Card className="hover:shadow-md transition-shadow cursor-pointer h-[72px]">
+      <CardContent className="p-3 flex items-center justify-between h-full">
         <div className="flex flex-col justify-between h-full">
           <span className="text-[10px] text-muted-foreground">{title}</span>
           <span className="text-xl font-bold text-foreground">{value}</span>
