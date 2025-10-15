@@ -127,11 +127,10 @@ export const Ribbon = ({ isExpanded, setIsExpanded }: RibbonProps) => {
           <div className="flex items-center gap-4 flex-wrap">
             {/* Columns Selector */}
             <div className="flex flex-col gap-1">
-              <label className="text-xs font-medium text-foreground">Colunas</label>
               <Popover>
                 <PopoverTrigger asChild>
                   <Button variant="outline" size="sm" className="w-48 justify-between text-xs h-8">
-                    {selectedColumns.length} colunas selecionadas
+                    Colunas
                     <ChevronDown className="h-3 w-3 opacity-50" />
                   </Button>
                 </PopoverTrigger>
@@ -180,7 +179,6 @@ export const Ribbon = ({ isExpanded, setIsExpanded }: RibbonProps) => {
 
             {/* Report Type */}
             <div className="flex flex-col gap-1">
-              <label className="text-xs font-medium text-foreground">Tipo do Relatório</label>
               <Select value={reportType} onValueChange={setReportType}>
                 <SelectTrigger className="w-44 h-8 text-xs">
                   <SelectValue />
@@ -195,11 +193,10 @@ export const Ribbon = ({ isExpanded, setIsExpanded }: RibbonProps) => {
 
             {/* Period Filter */}
             <div className="flex flex-col gap-1">
-              <label className="text-xs font-medium text-foreground">Filtro de Período</label>
               <Popover>
                 <PopoverTrigger asChild>
                   <Button variant="outline" size="sm" className="w-44 justify-between text-xs h-8">
-                    {periodFilters.length} períodos
+                    Períodos
                     <ChevronDown className="h-3 w-3 opacity-50" />
                   </Button>
                 </PopoverTrigger>
