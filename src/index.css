@@ -42,20 +42,20 @@ All colors MUST be HSL.
     --radius: 0.25rem;
 
     /* Menu colors */
-    --menu-background: 88 56% 51%;
-    --menu-foreground: 0 0% 100%;
-    --menu-hover: 88 56% 45%;
+    --menu-background: 80 51% 66%;
+    --menu-foreground: 0 0% 0%;
+    --menu-hover: 80 51% 60%;
 
     /* Ribbon colors */
     --ribbon-background: 0 0% 100%;
     --ribbon-border: 88 15% 85%;
 
     /* Grid colors */
-    --grid-header: 88 56% 51%;
-    --grid-header-foreground: 0 0% 100%;
-    --grid-row-even: 0 0% 100%;
-    --grid-row-odd: 88 25% 97%;
-    --grid-border: 88 15% 88%;
+    --grid-header: 80 51% 66%;
+    --grid-header-foreground: 0 0% 0%;
+    --grid-row-even: 80 51% 66%;
+    --grid-row-odd: 80 51% 66%;
+    --grid-border: 80 30% 50%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 0 0% 25%;
@@ -98,18 +98,18 @@ All colors MUST be HSL.
     --input: 88 15% 18%;
     --ring: 88 56% 51%;
 
-    --menu-background: 88 56% 45%;
-    --menu-foreground: 0 0% 100%;
-    --menu-hover: 88 56% 38%;
+    --menu-background: 80 51% 66%;
+    --menu-foreground: 0 0% 0%;
+    --menu-hover: 80 51% 60%;
 
     --ribbon-background: 0 0% 12%;
     --ribbon-border: 88 15% 20%;
 
-    --grid-header: 88 56% 45%;
-    --grid-header-foreground: 0 0% 100%;
-    --grid-row-even: 0 0% 12%;
-    --grid-row-odd: 88 15% 14%;
-    --grid-border: 88 15% 20%;
+    --grid-header: 80 51% 66%;
+    --grid-header-foreground: 0 0% 0%;
+    --grid-row-even: 80 51% 66%;
+    --grid-row-odd: 80 51% 66%;
+    --grid-border: 80 30% 50%;
 
     --sidebar-background: 0 0% 10%;
     --sidebar-foreground: 0 0% 95%;
