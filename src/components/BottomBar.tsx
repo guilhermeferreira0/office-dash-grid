@@ -19,44 +19,40 @@ export const BottomBar = () => {
           variant="ghost"
           size="sm"
           onClick={() => setChartOpen(true)}
-          className="flex flex-col h-9 px-3 hover:bg-accent gap-0.5"
+          className="h-8 w-8 p-0 hover:bg-accent"
           title="Gráfico"
         >
-          <BarChart3 className="h-4 w-4 text-primary" />
-          <span className="text-[9px] text-foreground">Gráfico</span>
+          <BarChart3 className="h-5 w-5 text-black" />
         </Button>
 
         <Button
           variant="ghost"
           size="sm"
           onClick={() => setSimulationOpen(true)}
-          className="flex flex-col h-9 px-3 hover:bg-accent gap-0.5"
+          className="h-8 w-8 p-0 hover:bg-accent"
           title="Simulação"
         >
-          <FlaskConical className="h-4 w-4 text-primary" />
-          <span className="text-[9px] text-foreground">Simulação</span>
+          <FlaskConical className="h-5 w-5 text-black" />
         </Button>
 
         <Button
           variant="ghost"
           size="sm"
           onClick={() => setComparativeOpen(true)}
-          className="flex flex-col h-9 px-3 hover:bg-accent gap-0.5"
+          className="h-8 w-8 p-0 hover:bg-accent"
           title="Comparativos"
         >
-          <GitCompare className="h-4 w-4 text-primary" />
-          <span className="text-[9px] text-foreground">Comparativos</span>
+          <GitCompare className="h-5 w-5 text-black" />
         </Button>
 
         <Button
           variant="ghost"
           size="sm"
           onClick={() => setAIOpen(true)}
-          className="flex flex-col h-9 px-3 hover:bg-accent gap-0.5"
+          className="h-8 w-8 p-0 hover:bg-accent"
           title="IA"
         >
-          <Sparkles className="h-4 w-4 text-primary" />
-          <span className="text-[9px] text-foreground">IA</span>
+          <Sparkles className="h-5 w-5 text-black" />
         </Button>
       </div>
 
