@@ -9,12 +9,7 @@ const Index = () => {
       <Ribbon />
       
       {/* Main content area with proper spacing for fixed headers */}
-      <main className="flex-1 flex flex-col mt-32 overflow-hidden">
-        <div className="px-4 py-2 border-b border-border">
-          <h1 className="text-lg font-semibold text-foreground">
-            SGI RECEPTIVO - Outubro 2024
-          </h1>
-        </div>
+      <main className="flex-1 flex flex-col pt-[125px] overflow-hidden">
         <DataGrid />
       </main>
     </div>
