@@ -94,7 +94,7 @@ export const Ribbon = ({ isExpanded, setIsExpanded }: RibbonProps) => {
     return (
       <div className="fixed top-8 left-0 right-0 z-40 bg-ribbon border-b border-ribbon-border">
         <div className="px-4 py-1 flex items-center justify-between">
-          <span className="text-xs text-muted-foreground">Ribbon oculta</span>
+          <span className="text-xs text-muted-foreground">Gerencial | On Line</span>
           <div className="flex items-center gap-2">
             <Button
               variant="outline"
@@ -112,7 +112,7 @@ export const Ribbon = ({ isExpanded, setIsExpanded }: RibbonProps) => {
               className="h-6 px-2 text-xs"
             >
               <ChevronDown className="h-3 w-3 mr-1" />
-              Mostrar Ribbon
+              Opções
             </Button>
           </div>
         </div>
