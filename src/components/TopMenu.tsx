@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/anel_branco.png";
+import logo from "@/assets/logo-TMKT_branco.png";
 
 const leftMenuItems = [
   { label: "On Line", path: "/online" },
