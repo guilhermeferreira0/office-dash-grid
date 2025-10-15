@@ -88,8 +88,8 @@ export const Ribbon = () => {
 
   if (!isExpanded) {
     return (
-      <div className="fixed top-8 left-0 right-0 z-40 bg-ribbon border-b border-ribbon-border">
-        <div className="px-4 py-1 flex items-center justify-between">
+      <div className="fixed top-8 left-0 right-0 z-40 bg-ribbon border-b border-ribbon-border h-[117px] flex items-center">
+        <div className="px-4 flex items-center justify-between w-full">
           <span className="text-xs text-muted-foreground">Ribbon oculta</span>
           <Button
             variant="ghost"
