@@ -99,11 +99,11 @@ export const Ribbon = ({ isExpanded, setIsExpanded }: RibbonProps) => {
             <Button
               variant="outline"
               size="sm"
-              className="h-8 px-3 text-xs bg-white hover:bg-gray-50"
+              className="h-8 w-8 p-0 bg-white hover:bg-gray-50"
               onClick={() => console.log('Exportar para Excel')}
+              title="Exportar para Excel"
             >
-              <FileSpreadsheet className="h-4 w-4 mr-2 text-black" />
-              Exportar Excel
+              <FileSpreadsheet className="h-4 w-4 text-black" />
             </Button>
             <Button
               variant="ghost"
@@ -227,11 +227,11 @@ export const Ribbon = ({ isExpanded, setIsExpanded }: RibbonProps) => {
             <Button
               variant="outline"
               size="sm"
-              className="h-8 px-3 text-xs bg-white hover:bg-gray-50"
+              className="h-8 w-8 p-0 bg-white hover:bg-gray-50"
               onClick={() => console.log('Exportar para Excel')}
+              title="Exportar para Excel"
             >
-              <FileSpreadsheet className="h-4 w-4 mr-2 text-black" />
-              Exportar Excel
+              <FileSpreadsheet className="h-4 w-4 text-black" />
             </Button>
             <Button
               variant="ghost"
