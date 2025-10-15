@@ -133,7 +133,7 @@ export const DataGrid = () => {
   return (
     <div className="flex-1 overflow-hidden bg-background">
       <div className="h-full overflow-auto">
-        <table className="w-full border-collapse text-[10px] font-sans">
+        <table className="w-full border-collapse text-[9px] font-calibri">
           <thead className="sticky top-0 z-10">
             <tr className="bg-grid-header text-grid-header-foreground">
               <th className="px-2 py-2 text-left font-semibold border-r border-grid-border whitespace-nowrap">
