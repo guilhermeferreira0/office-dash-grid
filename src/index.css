@@ -53,8 +53,8 @@ All colors MUST be HSL.
     /* Grid colors */
     --grid-header: 80 51% 66%;
     --grid-header-foreground: 0 0% 0%;
-    --grid-row-even: 80 51% 66%;
-    --grid-row-odd: 80 51% 66%;
+    --grid-row-even: 0 0% 100%;
+    --grid-row-odd: 80 51% 93%;
     --grid-border: 80 30% 50%;
 
     --sidebar-background: 0 0% 98%;
@@ -107,8 +107,8 @@ All colors MUST be HSL.
 
     --grid-header: 80 51% 66%;
     --grid-header-foreground: 0 0% 0%;
-    --grid-row-even: 80 51% 66%;
-    --grid-row-odd: 80 51% 66%;
+    --grid-row-even: 0 0% 100%;
+    --grid-row-odd: 80 51% 93%;
     --grid-border: 80 30% 50%;
 
     --sidebar-background: 0 0% 10%;
