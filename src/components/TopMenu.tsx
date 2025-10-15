@@ -23,7 +23,7 @@ export const TopMenu = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 h-8 bg-menu text-menu-foreground shadow-sm">
-      <div className="h-full flex items-center px-4">
+      <div className="h-full flex items-center justify-center px-4">
         <ul className="flex items-center gap-1 h-full text-xs font-medium">
           {menuItems.map((item, index) => (
             <li key={index} className="h-full flex items-center">
