@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "@/assets/anel_branco.png";
 
 const leftMenuItems = [
   { label: "On Line", path: "/online" },
@@ -45,30 +46,33 @@ export const TopMenu = () => {
         </ul>
 
         {/* Right menu items */}
-        <ul className="flex items-center gap-1 h-full text-xs font-medium">
-          {rightMenuItems.map((item, index) => (
-            <li key={index} className="h-full flex items-center">
-              {item.action ? (
-                <button
-                  onClick={() => handleAction(item.action)}
-                  className="h-full px-3 hover:bg-menu-hover transition-colors duration-150 flex items-center"
-                >
-                  {item.label}
-                </button>
-              ) : (
-                <Link
-                  to={item.path}
-                  className="h-full px-3 hover:bg-menu-hover transition-colors duration-150 flex items-center"
-                >
-                  {item.label}
-                </Link>
-              )}
-              {index < rightMenuItems.length - 1 && (
-                <span className="text-menu-foreground/40">|</span>
-              )}
-            </li>
-          ))}
-        </ul>
+        <div className="flex items-center gap-3 h-full">
+          <ul className="flex items-center gap-1 h-full text-xs font-medium">
+            {rightMenuItems.map((item, index) => (
+              <li key={index} className="h-full flex items-center">
+                {item.action ? (
+                  <button
+                    onClick={() => handleAction(item.action)}
+                    className="h-full px-3 hover:bg-menu-hover transition-colors duration-150 flex items-center"
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <Link
+                    to={item.path}
+                    className="h-full px-3 hover:bg-menu-hover transition-colors duration-150 flex items-center"
+                  >
+                    {item.label}
+                  </Link>
+                )}
+                {index < rightMenuItems.length - 1 && (
+                  <span className="text-menu-foreground/40">|</span>
+                )}
+              </li>
+            ))}
+          </ul>
+          <img src={logo} alt="Logo da empresa" className="h-6 w-auto" />
+        </div>
       </div>
     </nav>
   );
